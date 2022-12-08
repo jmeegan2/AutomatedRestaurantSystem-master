@@ -60,6 +60,6 @@ public class Main {
         return choice;
     }
     public static void calltrailer(){
-        System.out.println("Welcome to steakhouse");
+        System.out.println("Welcome to Chili's");
     }
 }

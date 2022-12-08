@@ -17,6 +17,7 @@ public class Order {
         for(MenuItem menuItem: order) {
             System.out.println(menuItem.getDescription());
             i++;
+
         }
     }
 }
