@@ -11,6 +11,9 @@ public class Client {
         Scanner inputScanner = new Scanner(System.in);
         int menuChoice;
 
+        // Get the singleton instance of the SystemInterface class
+        SystemInterface systemInterface = SystemInterface.getInstance();
+
         // Display menu and get user's choice
         menuChoice = displayMenu(inputScanner, MIN_CHOICE, MAX_CHOICE);
         // Keep displaying menu and getting user's choice until they choose to exit
@@ -26,7 +29,6 @@ public class Client {
                     break;
                 case 3:
                     // Display current tab
-                    callTrailer();
                     SystemInterface.getTab();
                     break;
             }
@@ -64,9 +66,6 @@ public class Client {
         return userChoice;
     }
 
-    // Displays greeting
-    private static void callTrailer() {
-        System.out.println("Welcome to Chili's");
-    }
+
 }
 
