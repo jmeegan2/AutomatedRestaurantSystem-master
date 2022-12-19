@@ -27,6 +27,7 @@ public class OrderItem implements CommandInterface {
         // Print the menu
         a.getMenu().print();
         // Prompt the user to enter a menu item number
+
         System.out.println("Please enter the number of the item you would like to order. To exit, enter 0: ");
         // Read the user input
         choice = getInt(input,min,max);
@@ -67,7 +68,6 @@ public class OrderItem implements CommandInterface {
         // Set the submitted flag to true
         submitted = true;
         // Confirm that the order has been placed
-        System.out.println("Your order has been placed. ");
         return null;
     }
     public static int getInt(Scanner input, int min, int max) {

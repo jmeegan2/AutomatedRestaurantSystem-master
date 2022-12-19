@@ -2,11 +2,18 @@ import java.util.Scanner;
 
 public class Client {
 
+
+    static String nameInput;
+
+
     // Constants for minimum and maximum menu choices
+
     private static final int MIN_CHOICE = 0;
     private static final int MAX_CHOICE = 3;
 
     public static void main(String[] args) {
+
+
         // Create scanner for user input
         Scanner inputScanner = new Scanner(System.in);
         int menuChoice;
@@ -25,18 +32,25 @@ public class Client {
                     break;
                 case 2:
                     // Place an order
+                    System.out.println("\nEnter the name for order: ");
+                    Scanner stringScanner = new Scanner(System.in);
+                    nameInput = stringScanner.next();
                     SystemInterface.getOrders();
                     break;
                 case 3:
                     // Display current tab
                     SystemInterface.getTab();
                     break;
+
             }
             menuChoice = displayMenu(inputScanner, MIN_CHOICE, MAX_CHOICE);
+
         }
 
         System.out.println("Menu Terminated");
+
     }
+
 
     // Displays menu and gets user's choice
     private static int displayMenu(Scanner inputScanner, int minChoice, int maxChoice) {
@@ -64,6 +78,7 @@ public class Client {
             userChoice = getValidInt(inputScanner, min, max);
         }
         return userChoice;
+
     }
 
 

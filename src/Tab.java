@@ -1,7 +1,8 @@
 
 //
+import javax.xml.namespace.QName;
 import java.text.DecimalFormat;
-
+import java.util.Scanner;
 public class Tab {
     // Declare instance variables for menu and orders
     private Menu menu;
@@ -14,18 +15,23 @@ public class Tab {
         menu = m;
         order = o;
     }
-    
+
+
     // Method to display the current tab
     public void getTab() {
-
+        System.out.println("\n");
+        String name = "";
+        TextAppend custName = new TextField(name);
+        custName.write();
         // Create a DecimalFormat object to format prices with 2 decimal places
         DecimalFormat df = new DecimalFormat("#.##");
         // Set the paid variable to true
         paid = true;
         // Declare a variable to keep track of the current item in the loop
         int i = 0;
+
         // Print a separator line
-        System.out.println("\n" + "**********************************************");
+        System.out.println("" + "**********************************************");
         // Print the title for the tab
         System.out.println("******************Current Tab*****************");
         // Get the total cost of the items on the tab
