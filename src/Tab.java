@@ -19,10 +19,6 @@ public class Tab {
 
     // Method to display the current tab
     public void getTab() {
-        System.out.println("\n");
-        String name = "";
-        TextAppend custName = new TextField(name);
-        custName.write();
         // Create a DecimalFormat object to format prices with 2 decimal places
         DecimalFormat df = new DecimalFormat("#.##");
         // Set the paid variable to true
@@ -31,9 +27,12 @@ public class Tab {
         int i = 0;
 
         // Print a separator line
-        System.out.println("" + "**********************************************");
+        System.out.println("\n" + "**********************************************");
         // Print the title for the tab
         System.out.println("******************Current Tab*****************");
+        String name = "";
+        TextAppend custName = new TextField(name);
+        custName.write();
         // Get the total cost of the items on the tab
         double total = getTotal();
         // Calculate the tax on the total cost

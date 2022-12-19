@@ -65,6 +65,7 @@ public class OrderItem implements CommandInterface {
             if(choice == 0)
                 break;
         }
+        System.out.println("||||||||| Order has been Placed |||||||||" );
         // Set the submitted flag to true
         submitted = true;
         // Confirm that the order has been placed

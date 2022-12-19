@@ -9,6 +9,7 @@ public class TextField implements TextAppend {
 
     @Override
     public void write() {
-        System.out.println("Order for: " + name );
+        System.out.println("Location: 1000 Old Faithful Rd, Yellowstone"
+                +" \nOrder for: " + name );
     }
 }
