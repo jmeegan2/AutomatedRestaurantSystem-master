@@ -1,3 +1,4 @@
+//
 public class PreDecorator extends Decorator {
 
     public PreDecorator(Tab r){

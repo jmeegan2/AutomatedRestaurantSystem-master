@@ -1,5 +1,5 @@
 
-
+//
 public class Aggregator {
     private Menu menu;
     private Orders order;
@@ -9,12 +9,15 @@ public class Aggregator {
         order = new Orders();
     }
     public Menu getMenu() {
+
         return menu;
     }
     public Orders getOrders() {
+
         return order;
     }
     public void setOrders(Orders order) {
+
         this.order = order;
     }
 }
