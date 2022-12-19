@@ -2,19 +2,19 @@
 
 public class Aggregator {
     private Menu menu;
-    private Order order;
+    private Orders order;
 
     public Aggregator() {
         menu = new Menu();
-        order = new Order();
+        order = new Orders();
     }
     public Menu getMenu() {
         return menu;
     }
-    public Order getOrders() {
+    public Orders getOrders() {
         return order;
     }
-    public void setOrders(Order order) {
+    public void setOrders(Orders order) {
         this.order = order;
     }
 }

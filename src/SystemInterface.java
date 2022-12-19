@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class SystemInterface {
     private static Invoker invoker = new Invoker();
     public static String getMenu() {
@@ -8,7 +6,7 @@ public class SystemInterface {
         return m + " ";
     }
     public static String getOrders() {
-        Order o = invoker.getOrder();
+        Orders o = invoker.getOrder();
         return o + " ";
     }
     public static String getTab() {

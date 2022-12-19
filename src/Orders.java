@@ -1,9 +1,9 @@
 import java.util.*;
 
-public class Order {
+public class Orders {
     public static ArrayList<MenuItem> order;
 
-    public Order() {
+    public Orders() {
         order = new ArrayList<MenuItem>();
     }
     public ArrayList<MenuItem> getOrder() {

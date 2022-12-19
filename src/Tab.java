@@ -4,10 +4,10 @@ import java.text.DecimalFormat;
 
 public class Tab {
     private Menu menu;
-    private Order order;
+    private Orders order;
     public static boolean paid = false;
 
-    public Tab(Menu m, Order o) {
+    public Tab(Menu m, Orders o) {
         menu = m;
         order = o;
     }

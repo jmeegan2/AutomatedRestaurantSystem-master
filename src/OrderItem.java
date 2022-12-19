@@ -1,13 +1,13 @@
 import java.util.*;
 
-public class SubmitOrder implements CommandInterface {
+public class OrderItem implements CommandInterface {
     private Aggregator a;
     public static boolean submitted = false;
     Scanner input = new Scanner(System.in);
     private static final int min = 1;
     private static final int max = 5;
 
-    public SubmitOrder(Aggregator a) {
+    public OrderItem(Aggregator a) {
         this.a = a;
     }
     public Object execute() {
@@ -17,7 +17,7 @@ public class SubmitOrder implements CommandInterface {
         a.getMenu().print();
         System.out.println("Place your order, 0 to exit: ");
         choice = getInt(input,min,max);
-        Order order = new Order();
+        Orders order = new Orders();
         a.setOrders(order);
         while(choice!=0) {
             switch(choice) {

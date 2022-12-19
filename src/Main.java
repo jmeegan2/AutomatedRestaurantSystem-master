@@ -31,11 +31,12 @@ public class Main {
 
     private static int menu(Scanner input, int min, int max) {
         int ans;
-        System.out.println("\nMenu:\n" +
-                "1 - Display Menu\n" +
-                "2 - Submit Order\n" +
-                "3 - Display Tab\n" +
-                "0 - Terminate menu");
+        System.out.println
+                ("\nPlease select an option from the following menu:\n" +
+                "1 - Display the full menu\n" +
+                "2 - Place an order\n" +
+                "3 - Display the current tab\n" +
+                "0 - Exit the menu");
         System.out.print("Enter your choice: ");
         ans = getInt(input, min, max);
         return ans;
